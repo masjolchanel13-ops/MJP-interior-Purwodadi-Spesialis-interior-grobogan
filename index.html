@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJP Interior Purwodadi - Spesialis Plafon PVC & Gypsum</title>
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Warna Emas/Aksen MJP */
+            --dark-color: #1a1a1a;
+            --light-color: #f9f9f9;
+            --gray-color: #666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Service Badges */
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .badge-item {
+            text-align: center;
+            padding: 10px;
+            flex: 1 1 200px;
+        }
+
+        .badge-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2.section-title {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            display: inline-block;
+        }
+
+        /* Price Grid & Cards */
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .price-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price-card-header {
+            background-color: var(--dark-color);
+            color: var(--primary-color);
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .price-card-body {
+            padding: 15px;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-val {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* Note Callout */
+        .info-box {
+            background-color: #eef7ff;
+            border-left: 4px solid #0275d8;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+        }
+
+        /* Showcase / Wall Molding */
+        .molding-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .molding-img {
+            flex: 1 1 300px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .molding-info {
+            flex: 1 1 300px;
+        }
+
+        /* CTA WhatsApp Button */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1ebc57;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark-color);
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MJP INTERIOR PURWODADI</h1>
+        <p>Spesialis Plafon PVC, Gypsum & Wall Molding Interior</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Keunggulan Service -->
+        <div class="badges">
+            <div class="badge-item">
+                <h3>✔ Free Survey</h3>
+                <p>Konsultasi & survei lokasi gratis[span_0](start_span)[span_0](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Terpasang Kuat</h3>
+                <p>Hasil kokoh, rapi & presisi[span_1](start_span)[span_1](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Profesional</h3>
+                <p>Dikerjakan oleh tenaga berpengalaman[span_2](start_span)[span_2](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Bayar Di Akhir</h3>
+                <p>Terima beres, pembayaran setelah selesai[span_3](start_span)[span_3](end_span)</p>
+            </div>
+        </div>
+
+        <!-- Daftar Harga Plafon -->
+        <section>
+            <h2 class="section-title">Daftar Harga Plafon</h2>
+            <div class="price-grid">
+                
+                <div class="price-card">
+                    <div class="price-card-header">Model Flat</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Flat 1 Warna</span>
+                            <span class="price-val">Rp 150.000 / m²</span>[span_4](start_span)[span_4](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Flat 2 Warna</span>
+                            <span class="price-val">Rp 190.000 / m²</span>[span_5](start_span)[span_5](end_span)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card-header">Model Drop Ceiling</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Drop 1 Tingkat</span>
+                            <span class="price-val">Rp 250.000 / m²</span>[span_6](start_span)[span_6](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Drop 2 Tingkat</span>
+                            <span class="price-val">Rp 300.000 / m²</span>[span_7](start_span)[span_7](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Drop 3 Tingkat</span>
+                            <span class="price-val">Rp 365.000 / m²</span>[span_8](start_span)[span_8](end_span)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card-header">Mewah / Custom</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>American Style</span>
+                            <span class="price-val">Rp 420.000 / m²</span>[span_9](start_span)[span_9](end_span)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Aksesoris Plafon -->
+            <h3 style="margin-top: 25px; margin-bottom: 10px;">Lampu & Ornamen Tambahan</h3>
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>LED Strip</span>
+                            <span class="price-val">Rp 35.000 / m¹</span>[span_10](start_span)[span_10](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Downlight</span>
+                            <span class="price-val">Rp 100.000 / titik</span>[span_11](start_span)[span_11](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Ornamen</span>
+                            <span class="price-val">Mulai Rp 150.000 / pcs</span>[span_12](start_span)[span_12](end_span)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>Catatan Kelistrikan:</strong> Gratis instalasi kabel kualitas biasa. Jika menginginkan kabel kualitas premium, terdapat biaya tambahan.
+            </div>
+        </section>
+
+        <!-- Wall Molding & Aksesoris Dinding -->
+        <section>
+            <h2 class="section-title">Wall Molding & Dekorasinya</h2>
+            
+            <div class="molding-showcase">
+                <!-- Gambar contoh wall molding -->
+                <img src="1000637666.jpg" alt="Contoh Wall Molding MJP Interior" class="molding-img">
+                
+                <div class="molding-info">
+                    <p style="margin-bottom: 15px;">Kami melayani pembuatan <strong>Wall Molding</strong> dengan berbagai bahan dan variasi hiasan dinding sesuai selera Anda:</p>
+                    
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Bahan Gypsum (Meter Lari):</strong> Rp 30.000 / m¹ <small>(Belum termasuk jasa cat)</small>
+                        </li>
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Bahan Gypsum (Meter Persegi):</strong> Rp 250.000 / m² <small>(Sudah termasuk jasa & bahan cat biasa)</small>
+                        </li>
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Molding Bahan PVC:</strong> Rp 150.000 / m²
+                        </li>
+                    </ul>
+
+                    <div class="info-box" style="margin-top: 15px; border-left-color: #5cb85c;">
+                        <strong>Rekomendasi Cat Terbaik:</strong> Untuk hasil maksimal dan tahan lama, kami menyarankan menggunakan cat <strong>Jotun</strong> atau <strong>Nippon Paint</strong> karena kualitasnya yang sudah teruji.
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 25px; margin-bottom: 10px;">Aksesoris & Hiasan Dinding Tambahan</h3>
+            <p style="font-size: 0.95rem; color: #555; margin-bottom: 15px;">
+                <em>*Harga wall molding belum termasuk aksesoris berikut:</em>
+            </p>
+            
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Kaca Bevel</span>
+                            <span class="price-val">Rp 120.000 / m²</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Kaligrafi Dinding</span>
+                            <span class="price-val">Hitung per meter lari (m¹)</span>
+                        </div>
+                        <div class="price-item">
+                            <span>List Mirror Stainless / PVC</span>
+                            <span class="price-val">Hitung per meter lari (m¹)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tombol Call To Action / Hubungi WA -->
+        <section style="text-align: center;">
+            <h2>Tertarik Mengubah Tampilan Rumah Anda?</h2>
+            <p>Konsultasikan kebutuhan interior Anda sekarang secara Gratis!</p>
+            <a href="https://wa.me/6281212955973?text=Halo%20MJP%20Interior%20Purwodadi,%20saya%20ingin%20konsultasi%20mengenai%20pemasangan%20plafon/wall%20molding" class="cta-btn" target="_blank">
+                📱 Hubungi via WhatsApp (081212955973)[span_13](start_span)[span_13](end_span)
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MJP Interior Purwodadi. Spesialis Plafon & Interior[span_14](start_span)[span_14](end_span). All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJP Interior Purwodadi - Spesialis Plafon PVC & Gypsum</title>
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Warna Emas/Aksen MJP */
+            --dark-color: #1a1a1a;
+            --light-color: #f9f9f9;
+            --gray-color: #666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Service Badges */
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .badge-item {
+            text-align: center;
+            padding: 10px;
+            flex: 1 1 200px;
+        }
+
+        .badge-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2.section-title {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            display: inline-block;
+        }
+
+        /* Price Grid & Cards */
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .price-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price-card-header {
+            background-color: var(--dark-color);
+            color: var(--primary-color);
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .price-card-body {
+            padding: 15px;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-val {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* Note Callout */
+        .info-box {
+            background-color: #eef7ff;
+            border-left: 4px solid #0275d8;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+        }
+
+        /* Showcase / Wall Molding */
+        .molding-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .molding-img {
+            flex: 1 1 300px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .molding-info {
+            flex: 1 1 300px;
+        }
+
+        /* CTA WhatsApp Button */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1ebc57;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark-color);
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MJP INTERIOR PURWODADI</h1>
+        <p>Spesialis Plafon PVC, Gypsum & Wall Molding Interior</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Keunggulan Service -->
+        <div class="badges">
+            <div class="badge-item">
+                <h3>✔ Free Survey</h3>
+                <p>Konsultasi & survei lokasi gratis[span_0](start_span)[span_0](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Terpasang Kuat</h3>
+                <p>Hasil kokoh, rapi & presisi[span_1](start_span)[span_1](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Profesional</h3>
+                <p>Dikerjakan oleh tenaga berpengalaman[span_2](start_span)[span_2](end_span)</p>
+            </div>
+            <div class="badge-item">
+                <h3>✔ Bayar Di Akhir</h3>
+                <p>Terima beres, pembayaran setelah selesai[span_3](start_span)[span_3](end_span)</p>
+            </div>
+        </div>
+
+        <!-- Daftar Harga Plafon -->
+        <section>
+            <h2 class="section-title">Daftar Harga Plafon</h2>
+            <div class="price-grid">
+                
+                <div class="price-card">
+                    <div class="price-card-header">Model Flat</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Flat 1 Warna</span>
+                            <span class="price-val">Rp 150.000 / m²</span>[span_4](start_span)[span_4](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Flat 2 Warna</span>
+                            <span class="price-val">Rp 190.000 / m²</span>[span_5](start_span)[span_5](end_span)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card-header">Model Drop Ceiling</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Drop 1 Tingkat</span>
+                            <span class="price-val">Rp 250.000 / m²</span>[span_6](start_span)[span_6](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Drop 2 Tingkat</span>
+                            <span class="price-val">Rp 300.000 / m²</span>[span_7](start_span)[span_7](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Drop 3 Tingkat</span>
+                            <span class="price-val">Rp 365.000 / m²</span>[span_8](start_span)[span_8](end_span)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-card-header">Mewah / Custom</div>
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>American Style</span>
+                            <span class="price-val">Rp 420.000 / m²</span>[span_9](start_span)[span_9](end_span)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Aksesoris Plafon -->
+            <h3 style="margin-top: 25px; margin-bottom: 10px;">Lampu & Ornamen Tambahan</h3>
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>LED Strip</span>
+                            <span class="price-val">Rp 35.000 / m¹</span>[span_10](start_span)[span_10](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Downlight</span>
+                            <span class="price-val">Rp 100.000 / titik</span>[span_11](start_span)[span_11](end_span)
+                        </div>
+                        <div class="price-item">
+                            <span>Ornamen</span>
+                            <span class="price-val">Mulai Rp 150.000 / pcs</span>[span_12](start_span)[span_12](end_span)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>Catatan Kelistrikan:</strong> Gratis instalasi kabel kualitas biasa. Jika menginginkan kabel kualitas premium, terdapat biaya tambahan.
+            </div>
+        </section>
+
+        <!-- Wall Molding & Aksesoris Dinding -->
+        <section>
+            <h2 class="section-title">Wall Molding & Dekorasinya</h2>
+            
+            <div class="molding-showcase">
+                <!-- Gambar contoh wall molding -->
+                <img src="1000637666.jpg" alt="Contoh Wall Molding MJP Interior" class="molding-img">
+                
+                <div class="molding-info">
+                    <p style="margin-bottom: 15px;">Kami melayani pembuatan <strong>Wall Molding</strong> dengan berbagai bahan dan variasi hiasan dinding sesuai selera Anda:</p>
+                    
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Bahan Gypsum (Meter Lari):</strong> Rp 30.000 / m¹ <small>(Belum termasuk jasa cat)</small>
+                        </li>
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Bahan Gypsum (Meter Persegi):</strong> Rp 250.000 / m² <small>(Sudah termasuk jasa & bahan cat biasa)</small>
+                        </li>
+                        <li style="padding: 6px 0; border-bottom: 1px dashed #ccc;">
+                            <strong>Molding Bahan PVC:</strong> Rp 150.000 / m²
+                        </li>
+                    </ul>
+
+                    <div class="info-box" style="margin-top: 15px; border-left-color: #5cb85c;">
+                        <strong>Rekomendasi Cat Terbaik:</strong> Untuk hasil maksimal dan tahan lama, kami menyarankan menggunakan cat <strong>Jotun</strong> atau <strong>Nippon Paint</strong> karena kualitasnya yang sudah teruji.
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 25px; margin-bottom: 10px;">Aksesoris & Hiasan Dinding Tambahan</h3>
+            <p style="font-size: 0.95rem; color: #555; margin-bottom: 15px;">
+                <em>*Harga wall molding belum termasuk aksesoris berikut:</em>
+            </p>
+            
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-card-body">
+                        <div class="price-item">
+                            <span>Kaca Bevel</span>
+                            <span class="price-val">Rp 120.000 / m²</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Kaligrafi Dinding</span>
+                            <span class="price-val">Hitung per meter lari (m¹)</span>
+                        </div>
+                        <div class="price-item">
+                            <span>List Mirror Stainless / PVC</span>
+                            <span class="price-val">Hitung per meter lari (m¹)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tombol Call To Action / Hubungi WA -->
+        <section style="text-align: center;">
+            <h2>Tertarik Mengubah Tampilan Rumah Anda?</h2>
+            <p>Konsultasikan kebutuhan interior Anda sekarang secara Gratis!</p>
+            <a href="https://wa.me/6281212955973?text=Halo%20MJP%20Interior%20Purwodadi,%20saya%20ingin%20konsultasi%20mengenai%20pemasangan%20plafon/wall%20molding" class="cta-btn" target="_blank">
+                📱 Hubungi via WhatsApp (081212955973)[span_13](start_span)[span_13](end_span)
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MJP Interior Purwodadi. Spesialis Plafon & Interior[span_14](start_span)[span_14](end_span). All Rights Reserved.</p>
+    </footer>
+
+</body>
+  </html>
